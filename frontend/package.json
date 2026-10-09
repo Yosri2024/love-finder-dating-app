@@ -1,0 +1,27 @@
+{
+  "name": "dating-app-frontend",
+  "version": "1.0.0",
+  "description": "Dating app frontend - React + Vite",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "cap:sync": "cap sync android",
+    "apk:lan": "VITE_API_URL=${VITE_API_URL:-http://192.168.100.12:8081/api} vite build && cap sync android",
+    "apk:debug": "cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.5.2",
+    "@capacitor/cli": "^8.5.2",
+    "@capacitor/core": "^8.5.2",
+    "axios": "^1.7.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.0"
+  }
+}

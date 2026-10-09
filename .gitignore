@@ -1,0 +1,35 @@
+# Dependencies
+**/node_modules/
+
+# Build outputs
+frontend/dist/
+datingbackend/target/
+android-native/build/
+android-native/.gradle/
+android-native/.kotlin/
+android-native/app/build/
+android-native/local.properties
+frontend/android/build/
+frontend/android/.gradle/
+frontend/android/app/build/
+frontend/android/local.properties
+
+# Env & secrets - NEVER commit real credentials
+.env
+*.env
+!**/.env.example
+
+# Logs
+*.log
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc
+*.orig
